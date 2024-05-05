@@ -1,0 +1,131 @@
+A4='.'
+B4='.'
+C4='.'
+D4='.'
+A3='.'
+B3='.'
+C3='.'
+D3='.'
+A2='.'
+B2='.'
+C2='.'
+D2='.'
+A1='.'
+B1='.'
+C1='.'
+D1='.'
+
+print(f'{A4} {B4} {C4} {D4}\n'
+      f'{A3} {B3} {C3} {D3}\n'
+      f'{A2} {B2} {C2} {D2}\n'
+      f'{A1} {B1} {C1} {D1}')
+move_amount=2
+while (move_amount<18):
+    move=input('move')
+    whos_move=move_amount/2
+    if whos_move%1==0:
+        if move == '1':
+            if A1=='.':
+                A1='X'
+            elif A2=='.':
+                A2='X'
+            elif A3=='.':
+                A3='X'
+            elif A4=='.':
+                A4='X'
+            else:
+                print('No can do amigo')
+                move_amount-=1
+        elif move == '2':
+            if B1=='.':
+                B1='X'
+            elif B2=='.':
+                B2='X'
+            elif B3=='.':
+                B3='X'
+            elif B4=='.':
+                B4='X'
+            else:
+                print('No can do amigo')
+                move_amount-=1
+        elif move == '3':
+            if C1=='.':
+                C1='X'
+            elif C2=='.':
+                C2='X'
+            elif C3=='.':
+                C3='X'
+            elif C4=='.':
+                C4='X'
+            else:
+                print('No can do amigo')
+                move_amount-=1
+        elif move == '4':
+            if D1=='.':
+                D1='X'
+            elif D2=='.':
+                D2='X'
+            elif D3=='.':
+                D3='X'
+            elif D4=='.':
+                D4='X'
+            else:
+                print('No can do amigo')
+                move_amount-=1
+    else:
+         if move == '1':
+            if A1=='.':
+                A1='O'
+            elif A2=='.':
+                A2='O'
+            elif A3=='.':
+                A3='O'
+            elif A4=='.':
+                A4='O'
+            else:
+                print('No can do amigo')
+                move_amount-=1
+         elif move == '2':
+             if B1=='.':
+                 B1='O'
+             elif B2=='.':
+                 B2='O'
+             elif B3=='.':
+                 B3='O'
+             elif B4=='.':
+                 B4='O'
+             else:
+                 print('No can do amigo')
+                 move_amount-=1
+         elif move == '3':
+             if C1=='.':
+                 C1='O'
+             elif C2=='.':
+                 C2='O'
+             elif C3=='.':
+                 C3='O'
+             elif C4=='.':
+                 C4='O'
+             else:
+                 print('No can do amigo')
+                 move_amount-=1
+         elif move == '4':
+             if D1=='.':
+                 D1='O'
+             elif D2=='.':
+                 D2='O'
+             elif D3=='.':
+                 D3='O'
+             elif D4=='.':
+                 D4='O'
+             else:
+                 print('No can do amigo')
+                 move_amount-=1
+    print(f'{A4} {B4} {C4} {D4}\n'
+      f'{A3} {B3} {C3} {D3}\n'
+      f'{A2} {B2} {C2} {D2}\n'
+      f'{A1} {B1} {C1} {D1}')
+    move_amount+=1
+    print(move_amount)
+
+
